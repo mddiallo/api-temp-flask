@@ -1,6 +1,12 @@
-from flask import Flask, request, jsonify
+
+from flask import (Flask, render_template, request, jsonify)
 
 app = Flask(__name__)
+
+@app.route('/')
+def index():
+    print('request for index page received')
+    return render_template('index.html')
 
 @app.route('/convert', methods=['POST'])
 def convert():
