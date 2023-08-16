@@ -11,3 +11,4 @@ To run this application:
 ```
 flask --debug run
 ```
+Quick Test
